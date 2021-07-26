@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOKES</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            background-color: #0063B2FF;
+        }
+        .content{
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #0063B2FF;
+        }
+        .container{
+            background-color: #FFFFFF;
+            color: #101820FF;
+            text-align: center;
+            width:50%;
+            height: 40%;
+            padding: 15px;
+            border-radius: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+        .container button{
+            width: 50%;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: white;
+            color: #FEE715FF;
+            border:none;
+            font-weight: bolder;
+        }
+        .container:hover{
+            transform: scale(1.1,1.1);
+            box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, .25),-5px -5px 30px 15px rgba(0, 0, 0, .22);
+
+        }
+        button:hover{
+            box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, .25),-5px -5px 30px 15px rgba(0, 0, 0, .22);
+
+        }
+        #jokess{
+            font-size: large;
+            font-style: italic;
+            font-weight: bolder;
+
+        }
+        .container h3{
+            font-weight: bolder;
+            opacity: .7;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <div class="container">
+        <h3>Best Jokes to make your day</h3>
+        <div id="jokess" class="joke">Awesome joke is loading...</div>
+        <button id="jokeBtn" class="btn">Next JOKE</button>
+    </div></div>
+    <script src="jokes.js">
+
+    </script>
+</body>
+</html>
